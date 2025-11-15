@@ -1,9 +1,7 @@
+import Layout from "./components/Layout"
+
 function App() {
-  return (
-    <div className='bg-gray-800 text-white h-screen'>
-      Hello, Device Sandbox!
-    </div>
-  )
+  return <Layout />
 }
 
 export default App
