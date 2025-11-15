@@ -14,9 +14,9 @@ return new class extends Migration {
     {
         Schema::create('devices', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger('type')->comment('1=fan, 2=light');
+            $table->tinyInteger('type')->comment('1=light, 2=fan');
             $table->string('name');
-            $table->json('settings')->comment('fan, light');
+            $table->json('settings')->comment('light, fan');
             $table->boolean('status')->default(1)->comment('1=active, 0=inactive');
             $table->timestamps();
             $table->softDeletes();
