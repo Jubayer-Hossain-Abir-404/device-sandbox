@@ -6,14 +6,14 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PresetRequest;
-use App\Repositories\DeviceRepository;
+use App\Repositories\PresetRepository;
 use App\Services\PresetService;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response as Res;
 
 class PresetController extends Controller
 {
-    public function __construct(private PresetService $service, private DeviceRepository $repository)
+    public function __construct(private PresetService $service, private PresetRepository $repository)
     {
     }
 

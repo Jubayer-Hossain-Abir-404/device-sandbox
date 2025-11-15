@@ -11,4 +11,5 @@ Route::middleware('throttle:api')
         Route::get('device/list', 'DeviceController@list');
 
         Route::post('presets', 'PresetController@store');
+        Route::get('preset/list', 'PresetController@list');
     });
