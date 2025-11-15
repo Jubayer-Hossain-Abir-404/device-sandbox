@@ -17,10 +17,10 @@ class Devices
                 'settings' => json_encode([
                     'power' => 0,
                     'color_temperatures' => [
-                        'peach' => '#FFE5B4',
-                        'alice_blue' => '#F0F8FF',
-                        'sky_blue' => '#87CEEB',
-                        'light_pink' => '#FFB6C1',
+                        'warm' => '#FFE5B4',
+                        'neutral' => '#F0F8FF',
+                        'cool' => '#87CEEB',
+                        'pink' => '#FFB6C1',
                     ],
                     'brightness_percentage' => 0,
                 ]),

@@ -16,7 +16,7 @@ return new class extends Migration {
             $table->id();
             $table->unsignedBigInteger('device_id');
             $table->foreign('device_id')->references('id')->on('devices');
-            $table->string('name');
+            $table->string('name')->unique();
             $table->json('devices')->comment('fan, light configurations');
             $table->boolean('status')->default(1)->comment('1=active, 0=inactive');
             $table->timestamps();
