@@ -22,7 +22,7 @@ const initialState: PresetsState = {
   error: null
 }
 
-const presetSlice = createSlice({
+const presetsSlice = createSlice({
   name: 'presets',
   initialState,
   reducers: {},
@@ -43,4 +43,4 @@ const presetSlice = createSlice({
   }
 })
 
-export default presetSlice.reducer
+export default presetsSlice.reducer

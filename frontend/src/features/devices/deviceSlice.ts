@@ -10,8 +10,7 @@ interface DevicesState {
 
 export const getDevices = createAsyncThunk('devices/fetch', async (_, { rejectWithValue }) => {
   try {
-    const response = await getDeviceList()
-    return response
+    return await getDeviceList()
   } catch (error) {
     return rejectWithValue((error as Error).message)
   }

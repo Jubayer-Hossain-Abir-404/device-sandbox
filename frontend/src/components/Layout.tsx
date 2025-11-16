@@ -8,6 +8,12 @@ export default function Layout() {
                     <Sidebar />
                 </aside>
             </div>
+
+            <div className="fixed bottom-4 left-1/2 -translate-x-1/2 md:hidden w-[95%]">
+                {/* simplified mobile controls */}
+                Light
+                Fan
+            </div>
         </div>
     );
 }
