@@ -19,3 +19,11 @@ export type DeviceColorTemperature = {
     cool: string
     pink: string
 }
+
+export type CanvasDevice = {
+  id: string
+  type: number
+  meta: DeviceSettings
+  x: number | null
+  y: number | null
+}
